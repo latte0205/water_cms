@@ -1,11 +1,17 @@
+// main.go
 package main
 
 import (
-	"github.com/latte0205/water_cms/projectA"
-	"github.com/latte0205/water_cms/projectB"
+	"fmt"
+	. "water_cms/math"
+	. "water_cms/projectA"
+	. "water_cms/projectB"
 )
 
 func main() {
-	projectA.DoSomething()
-	projectB.DoSomethingElse()
+	fmt.Println("hello")
+	fmt.Println(Average([]float64{1, 2}))
+
+	fmt.Println(DoSomething())
+	fmt.Println(DoSomethingElse())
 }
